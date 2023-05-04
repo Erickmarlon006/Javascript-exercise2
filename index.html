@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Eleitores</title>
+
+</head>
+<body>
+    <div class="container">
+        <h1>Eleições</h1>
+        <form action="#" name="eleições" id="eleições" method="get">
+            <div class="position">
+                <div class="campos">
+                    <label for="">Número de eleitores</label>
+                    <input type="number" id="num-eleitores" required> 
+                </div>
+                <div class="campos">
+                    <label for="votos-validos">Votos válidos</label>
+                    <input type="number" id="votos-validos" required>  
+                </div>
+            </div>
+            <div class="position">
+                <div class="campos">
+                    <label for="votos-brancos">Votos Brancos</label>
+                    <input type="number" id="votos-brancos" required>
+                </div>
+                <div class="campos">
+                    <label for="votos-nulos">Votos Nulos</label>
+                    <input type="number" id="votos-nulos" required>
+                </div>
+            </div>
+            <input type="submit" value="calcular porcentagem">
+            <div class="resultados">
+                <div class="validos"></div>
+                <div class="brancos"></div>
+                <div class="nulos"></div>
+            </div>
+        
+        </form>
+    </div>
+    <script src="./script.js"></script>
+    
+</body>
+</html>

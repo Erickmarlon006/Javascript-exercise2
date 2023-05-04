@@ -1,0 +1,69 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: darkgray;
+}
+.container{
+    width: 500px;
+    height: auto;
+    background-color: dimgrey;
+    border-radius: 0.5rem;
+}
+h1{
+    text-align: center;
+    margin: 1em;
+}
+.container form{
+   display: grid;
+   gap: 3em;
+  
+   
+}
+label{
+    font-size: 1.2rem;
+}
+input[type="number"]{
+    outline: none;
+    width: 90%;
+    height: 2em;
+    margin: 0 auto;
+    border: none;
+    border-radius: .5rem;
+    
+}
+input[type="submit"]{
+    height: 2.5rem;
+    margin-inline: 1rem;
+    font-size: 1rem;
+    border: none;
+    text-transform: uppercase;
+    border-radius: .5rem;
+}
+
+.position{
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+}
+.campos{
+    width: 40%;
+    display: grid;
+    text-align: center;
+}
+.resultados{
+    margin-bottom: 1rem;
+}
+.validos, .brancos, .nulos{
+    color: red;
+    font-size: 1.5rem;
+    margin-inline: 2rem
+}
+
